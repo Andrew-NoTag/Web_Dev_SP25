@@ -1,4 +1,2 @@
-# Hello World
-
-Hi! This is Andrew Z!
+# [White Cut Chicken](https://www.madewithlau.com/recipes/white-cut-chicken)
 
