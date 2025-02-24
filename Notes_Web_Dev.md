@@ -12,8 +12,8 @@
 ### Homework
 
 - [x] add repo link to class sheet
-- [ ] README.md recipe page
-- [ ] index.html recipe page
+- [x] README.md recipe page
+- [x] index.html recipe page
 - [x] Look through the Information Architecture File **and** watch the [What is Information Architecture? (UX Design Guide)](https://www.youtube.com/watch?v=OJLfjgVlwDo) video
 - [x] notes about information architecture
 
@@ -54,3 +54,5 @@ display only relevant content -> limiting information
 
 _how people find the information_
 **SEO (Search Engine Optimization)** - affect the ranking of search results
+
+## Week 6
