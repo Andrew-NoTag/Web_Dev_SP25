@@ -51,5 +51,6 @@ display only relevant content -> limiting information
 **gestalt principles** - how users organize information and build groups of patterns
 
 #### Context
-*how people find the information*
+
+_how people find the information_
 **SEO (Search Engine Optimization)** - affect the ranking of search results
