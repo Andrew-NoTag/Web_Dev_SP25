@@ -1,6 +1,7 @@
 ---
 layout: default
 title: White Cut Chicken Recipe
+Description: Recipe for White Cut Chicken
 ---
 
 
