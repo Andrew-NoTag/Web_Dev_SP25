@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(234, 230, 209);
+  background-color: rgb(251, 250, 247);
   text-align: center;
 }
 
@@ -18,7 +18,7 @@ h2 {
 
 a {
   font-size: 1em;
-  font-family: tahoma,sans-serif;
+  font-family: tahoma, sans-serif;
   font-weight: lighter;
 }
 a:link {
@@ -26,11 +26,11 @@ a:link {
 }
 
 a:visited {
-  color:brown;
+  color: brown;
 }
 
 a:hover {
-  color:darkgoldenrod;
+  color: darkgoldenrod;
 }
 
 .introduction {
@@ -38,5 +38,5 @@ a:hover {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-  font-size: 1em
+  font-size: 1em;
 }
