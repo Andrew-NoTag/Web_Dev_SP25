@@ -4,10 +4,9 @@ title: Web Dev Notes
 Description: Class Notes
 ---
 
-
 # Web Development DM-UY 2193
 
-**Andrew Zhang (jz5476)**   
+**Andrew Zhang (jz5476)**
 
 ## Week 5
 
@@ -71,8 +70,8 @@ _how people find the information_
 
 ### Homework
 
-- [x] Web Docs Box Model Challenge
 - [x] Github server page
+- [x] Artwork reflection
 
 ### CSS
 
