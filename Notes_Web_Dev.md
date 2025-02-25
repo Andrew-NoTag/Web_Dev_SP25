@@ -65,7 +65,7 @@ _how people find the information_
 ### Homework
 
 - [x] Web Docs Box Model Challenge
-- [ ] Github server page
+- [x] Github server page
 
 ### CSS
 
