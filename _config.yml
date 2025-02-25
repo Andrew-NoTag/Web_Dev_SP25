@@ -1,6 +1,0 @@
-theme: jekyll-theme-minimal
-plugins:
-  - jekyll-seo-tag
-  - jekyll-github-metadata
-include:
-  - "*.md"
