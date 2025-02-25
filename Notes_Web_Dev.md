@@ -1,12 +1,13 @@
 ---
 layout: default
 title: Web Dev Notes
+Description: Class Notes
 ---
 
 
 # Web Development DM-UY 2193
 
-**Andrew Zhang (jz5476)**
+**Andrew Zhang (jz5476)**   
 
 ## Week 5
 
