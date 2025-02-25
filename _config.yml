@@ -1,11 +1,4 @@
-markdown: kramdown
 theme: jekyll-theme-minimal
-defaults:
-  - scope:
-      path: ""  # Apply to all files
-      type: "pages"
-    values:
-      layout: "default"
-include:
-  - .  # Include all Markdown files
-
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
