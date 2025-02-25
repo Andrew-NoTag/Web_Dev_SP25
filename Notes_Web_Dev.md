@@ -1,3 +1,9 @@
+---
+layout: default
+title: Web Dev Notes
+---
+
+
 # Web Development DM-UY 2193
 
 **Andrew Zhang (jz5476)**

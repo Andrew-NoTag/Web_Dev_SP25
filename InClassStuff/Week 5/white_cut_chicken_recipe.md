@@ -1,3 +1,9 @@
+---
+layout: default
+title: White Cut Chicken Recipe
+---
+
+
 # [White Cut Chicken](https://thewoksoflife.com/cantonese-poached-chicken-w-ginger-scallion-oil-bai-qie-ji/)
 
 ![image](https://thewoksoflife.com/wp-content/uploads/2019/11/white-cut-chicken-18.jpg)

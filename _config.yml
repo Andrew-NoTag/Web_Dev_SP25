@@ -6,5 +6,6 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - README.md
-  - Notes_Web_Dev.md
+  - _pages
+  - _posts
+  - .   
