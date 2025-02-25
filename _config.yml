@@ -3,3 +3,6 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+include:
+  - README.md
+  - InClassStuff\Week 5\white_cut_chicken_recipe.md
