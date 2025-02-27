@@ -150,3 +150,70 @@ HTML elements can also refer to more than one class.
   <link rel="stylesheet" href="mystyle.css" />
 </head>
 ```
+
+### Navigation Bar
+
+To remove the bullets in the unordered list, we need to modify the css:
+
+```css
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+```
+
+To make the list horizontal:
+
+```css
+/* approach 1 */
+li {
+  display: inline;
+}
+
+/* approach 2 */
+li {
+  float: left;
+}
+a {
+  display: block;
+  padding: 3px;
+  background-color: pink;
+}
+```
+
+#### Hover
+```css
+/* Change the link color to black on hover */
+li a:hover {
+  background-color: black;
+}
+```
+
+#### Active/Current Navigation Link
+```css
+.active {
+  background-color: #04aa6d;
+}
+```
+
+#### Border Dividers
+```css
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+  border-right: 1px solid gray;
+}
+
+li:last-child {
+  border-right: none;
+}
+```
+
+#### Fixed Navigation Bar Position
+```css 
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+```
