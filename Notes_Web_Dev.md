@@ -12,8 +12,8 @@ Description: Class Notes
 
 ### In class
 
-1. git and github
-2. intro to html and markdown
+1. Git and GitHub
+2. Intro to HTML and Markdown
 
 ### Homework
 
@@ -65,9 +65,10 @@ _how people find the information_
 
 ### In class
 
-1. links
-2. css
+1. Links
+2. CSS
 3. DebugTogether Challenge
+4. Navigation Bars
 
 ### Homework
 
