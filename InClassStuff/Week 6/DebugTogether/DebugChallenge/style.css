@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(152, 246, 152);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  font-size: 24px;
+}
+
+
+p {
+  color: gray;
+  font-size: 16px;
+}
+
+.highlight {
+  background: yellow;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

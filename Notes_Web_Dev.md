@@ -67,6 +67,7 @@ _how people find the information_
 
 1. links
 2. css
+3. DebugTogether Challenge
 
 ### Homework
 
