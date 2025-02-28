@@ -65,6 +65,11 @@ a:hover {
 
 .nav_li {
   float: left;
+  border-right: 1px solid rgb(251, 250, 247);
+}
+
+.nav_li:last-child {
+  border-right: none;
 }
 
 .nav_a {
@@ -85,6 +90,5 @@ a:hover {
 
 .nav_li .nav_a:active{
   background-color: rgb(251, 250, 247);
-  color: brown;
 }
 
