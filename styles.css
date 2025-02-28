@@ -83,7 +83,7 @@ a:hover {
   background-color: brown;
 }
 
-nav_li nav_a:active{
+.nav_li .nav_a:active{
   background-color: rgb(251, 250, 247);
   color: brown;
 }
