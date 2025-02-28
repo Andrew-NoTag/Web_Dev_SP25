@@ -87,11 +87,11 @@ a:hover {
 
 .nav_a:link,
 .nav_a:visited {
-  background-color: rgb(251, 250, 247);
-  color: brown;
+  background-color: brown;
+  color: rgb(251, 250, 247);
 }
 
-.nav_a:active {
-  background-color: brown;
+.nav_a.active{
+  background-color: #CD853F;
   color: rgb(251, 250, 247);
 }

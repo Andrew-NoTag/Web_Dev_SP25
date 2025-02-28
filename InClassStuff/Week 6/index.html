@@ -9,10 +9,14 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
       $(function () {
-        $(".nav_a").each(function () {
-          if (this.href === window.location.href) {
-            $(this).addClass("active");
-          }
+        $("#nav-placeholder").load("../../nav_bar.html", function () {
+          $(".nav_a").each(function () {
+            var link_href = this.href.replace(/\/$/, "");
+            var window_href = window.location.href.replace(/\/$/, "");
+            if (link_href === window_href) {
+              $(this).addClass("active");
+            }
+          });
         });
       });
     </script>
@@ -26,12 +30,6 @@
 
     <!--Navigation bar-->
     <div id="nav-placeholder"></div>
-
-    <script>
-      $(function () {
-        $("#nav-placeholder").load("../../nav_bar.html");
-      });
-    </script>
     <!--end of Navigation bar-->
 
     <a href="artwork_reflection.html" target="_blank">Artwork Reflection</a>
