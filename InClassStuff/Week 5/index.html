@@ -9,11 +9,11 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
       $(function () {
-        $("nav_li nav_a")
-          .filter(function () {
-            return this.href === location.href;
-          })
-          .addClass("active");
+        $(".nav_a").each(function () {
+          if (this.href === window.location.href) {
+            $(this).addClass("active");
+          }
+        });
       });
     </script>
     <title>Intro to Web Dev - Week 5</title>
