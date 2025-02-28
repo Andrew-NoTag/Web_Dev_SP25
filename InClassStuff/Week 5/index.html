@@ -10,6 +10,8 @@
     <script>
       $(function () {
         $(".nav_a").each(function () {
+          console.log("Link href: " + this.href); // Log the href attribute
+          console.log("Window location: " + window.location.href);
           if (this.href === window.location.href) {
             $(this).addClass("active");
           }

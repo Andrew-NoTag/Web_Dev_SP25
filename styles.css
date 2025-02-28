@@ -76,6 +76,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .nav_ul .nav_li .nav_a:hover,
@@ -91,6 +92,6 @@ a:hover {
 }
 
 .nav_a:active {
-  color: rgb(251, 250, 247);
   background-color: brown;
+  color: rgb(251, 250, 247);
 }
