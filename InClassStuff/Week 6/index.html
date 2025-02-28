@@ -6,6 +6,16 @@
       src="https://kit.fontawesome.com/6104c18047.js"
       crossorigin="anonymous"
     ></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+      $(function () {
+        $("nav_li nav_a")
+          .filter(function () {
+            return this.href === location.href;
+          })
+          .addClass("active");
+      });
+    </script>
 
     <title>Intro to Web Dev - Week 6</title>
   </head>
@@ -13,8 +23,17 @@
     <a href="../../index.html" class="back-button"
       ><i class="fa-solid fa-house" style="color: rgb(251, 250, 247)"></i
     ></a>
-    <h1>Week 6</h1>
-    <h2>Homework</h2>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("../../nav_bar.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+
     <a href="artwork_reflection.html" target="_blank">Artwork Reflection</a>
     <br />
     <a href="DebugTogether/DebugChallenge/index.html" target="_blank"

@@ -8,12 +8,13 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 2.5em;
   color: rgb(0, 0, 0);
+  margin-bottom: 0px;
 }
 
 h2 {
-  font-family: Tahoma, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.7em;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 a {
@@ -49,3 +50,41 @@ a:hover {
   background-color: brown;
   border-radius: 7px;
 }
+
+.back-button:hover {
+  background-color: darkgoldenrod;
+}
+
+.nav_ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+  display:inline-block;
+}
+
+.nav_li {
+  float: left;
+}
+
+.nav_a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav_ul .nav_li .nav_a:hover, .nav_ul .nav_li .nav_a:focus{
+  background-color: darkgoldenrod;
+  color: rgb(251, 250, 247);
+}
+
+.nav_a:link, .nav_a:visited {
+  color: rgb(251, 250, 247);
+  background-color: brown;
+}
+
+nav_li nav_a:active{
+  background-color: rgb(251, 250, 247);
+  color: brown;
+}
+

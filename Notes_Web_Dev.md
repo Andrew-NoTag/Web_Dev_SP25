@@ -68,7 +68,7 @@ _how people find the information_
 1. Links
 2. CSS
 3. DebugTogether Challenge
-4. Navigation Bars
+4. Navigation Bars  
 
 ### Homework
 
@@ -196,6 +196,7 @@ li a:hover {
 .active {
   background-color: #04aa6d;
 }
+
 ```
 
 #### Border Dividers
