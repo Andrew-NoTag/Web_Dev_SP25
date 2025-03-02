@@ -16,7 +16,7 @@
 1. [Rhizome's Net Art Anthology](https://anthology.rhizome.org/)
    - Artworks do not aligned
    - Background color changes when my cursor move to a different artwork. But the colors are too brights, which easy to make people visual fatigue.
-2. ## [Tech Kids Unlimited](https://techkidsunlimited.org/)
+2. [Tech Kids Unlimited](https://techkidsunlimited.org/)
     - Color tone is dissonance, use too many colors on the page
     - Icon styles do not match. For example, some button are rectangles, some buttons are rounded rectangles. Even rounded rectangles are not with the same radius
     - Messy layout.
