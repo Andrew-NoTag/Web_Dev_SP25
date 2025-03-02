@@ -68,12 +68,14 @@ _how people find the information_
 1. Links
 2. CSS
 3. DebugTogether Challenge
-4. Navigation Bars  
+4. Navigation Bars
 
 ### Homework
 
 - [x] Github server page
 - [x] Artwork reflection
+- [x] MDN WEb Docs Box Model Challenge
+- [x] Site updates
 
 ### CSS
 
@@ -184,6 +186,7 @@ a {
 ```
 
 #### Hover
+
 ```css
 /* Change the link color to black on hover */
 li a:hover {
@@ -192,14 +195,15 @@ li a:hover {
 ```
 
 #### Active/Current Navigation Link
+
 ```css
 .active {
   background-color: #04aa6d;
 }
-
 ```
 
 #### Border Dividers
+
 ```css
 /* Add a gray right border to all list items, except the last item (last-child) */
 li {
@@ -212,7 +216,8 @@ li:last-child {
 ```
 
 #### Fixed Navigation Bar Position
-```css 
+
+```css
 ul {
   position: fixed;
   top: 0;
