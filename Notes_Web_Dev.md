@@ -224,3 +224,7 @@ ul {
   width: 100%;
 }
 ```
+
+## Week 7
+### In Class
+1. Encode Me!
