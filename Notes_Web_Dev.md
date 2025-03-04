@@ -226,5 +226,12 @@ ul {
 ```
 
 ## Week 7
+
 ### In Class
+
 1. Encode Me!
+
+### Homework
+
+### `<div>`
+
