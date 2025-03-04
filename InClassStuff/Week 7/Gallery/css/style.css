@@ -19,7 +19,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: repeat(3, 1fr);
   margin: 50px 50px 50px 50px;
   column-gap: 50px;
   row-gap: 50px;

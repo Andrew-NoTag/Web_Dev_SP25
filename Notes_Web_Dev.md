@@ -230,8 +230,11 @@ ul {
 ### In Class
 
 1. Encode Me!
+2. `<div>`
+3. Gallery styling
 
 ### Homework
+- [ ] Midterm project proposal
 
 ### `<div>`
 
