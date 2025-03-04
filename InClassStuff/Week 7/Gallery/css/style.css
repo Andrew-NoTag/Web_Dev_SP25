@@ -3,7 +3,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  margin: 50px 50px 50px 50px;
 }
 
 .polaroid {
@@ -21,6 +20,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
+  margin: 50px 50px 50px 50px;
   column-gap: 50px;
   row-gap: 50px;
 }
