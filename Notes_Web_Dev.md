@@ -235,3 +235,49 @@ ul {
 
 ### `<div>`
 
+The `<div>` elements is used as a container for other HTML elements.
+For example, if we want to group sections for styling:
+
+```css
+div {
+  width: 300px;
+  margin: auto;
+}
+```
+
+```html
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+</div>
+```
+
+#### Float
+
+The CSS `float` property is used for positioning and formatting content and allows elements to be positioned horizontally, rather than vertically.
+
+```css
+.mycontainer {
+  width: 100%;
+  overflow: auto;
+}
+.mycontainer div {
+  width: 33%;
+  float: left;
+}
+```
+
+#### Flex
+
+Use for flexible responsive layout structure without using float or positioning
+
+#### Grid
+
+The Grid Layout Module offers a grid-based layout system, with rows and columns.
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+```
