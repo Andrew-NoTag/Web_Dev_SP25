@@ -326,3 +326,45 @@ img {
   opacity: 0.5; /* value from 0.0 to 1.0*/
 }
 ```
+
+#### Transforms / Transitions
+
+##### CSS 2D Transforms
+
+CSS transforms allow you to move, rotate, scale, and skew elements.
+
+| Function       | Description                                                               |
+| -------------- | ------------------------------------------------------------------------- |
+| `matrix()`     | Defines a 2D transformation, using a matrix of six values                 |
+| `translate()`  | Defines a 2D translation, moving the element along the X- and the Y-axis  |
+| `translateX()` | Defines a 2D translation, moving the element along the X-axis             |
+| `translateY()` | Defines a 2D translation, moving the element along the Y-axis             |
+| `scale()`      | Defines a 2D scale transformation, scaling the element's width and height |
+| `scaleX()`     | Defines a 2D scale transformation, scaling the element's width            |
+| `scaleY()`     | Defines a 2D scale transformation, scaling the element's height           |
+| `rotate()`     | Defines a 2D rotation, the angle is specified in the parameter            |
+| `skew()`       | Defines a 2D skew transformation along the X- and the Y-axis              |
+| `skewX()`      | Defines a 2D skew transformation along the X-axis                         |
+| `skewY()`      | Defines a 2D skew transformation along the Y-axis                         |
+
+##### CSS 3D Transforms
+
+With the CSS `transform` property you can use the following 3D transformation functions:
+
+| Function    | Description                                            |
+| ----------- | ------------------------------------------------------ |
+| `rotateX()` | Rotates an element around its X-axis at a given degree |
+| `rotateY()` | Rotates an element around its Y-axis at a given degree |
+| `rotateZ()` | Rotates an element around its Z-axis at a given degree |
+
+##### CSS Transitions
+
+CSS transitions allows you to change property values smoothly, over a given duration.
+
+| Property                     | Description                                                                            |
+| ---------------------------- | -------------------------------------------------------------------------------------- |
+| `transition`                 | A shorthand property for setting the four transition properties into a single property |
+| `transition-delay`           | Specifies a delay (in seconds) for the transition effect                               |
+| `transition-duration`        | Specifies how many seconds or milliseconds a transition effect takes to complete       |
+| `transition-property`        | Specifies the name of the CSS property the transition effect is for                    |
+| `transition-timing-function` | Specifies the speed curve of the transition effect                                     |

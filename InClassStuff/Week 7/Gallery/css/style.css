@@ -5,18 +5,6 @@ body {
   background-size: cover;
 }
 
-.polaroid {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.polaroid p {
-  font-family: "Moon Dance", cursive;
-  font-weight: bolder;
-  font-style: normal;
-  font-size: large;
-  text-align: center;
-  color:darkslategray;
-}
-
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -31,4 +19,137 @@ body {
   margin-right: auto;
   width: 80%;
   padding: 20px 20px 20px 20px;
+  transition: transform 0.5s;
+}
+
+.container img:hover {
+  transform: scale(1.1);
+}
+
+.polaroid {
+  background-color: rgba(255, 255, 255, 0.65);
+  transition: background-color 0.5s;
+  transition: transform 0.5s;
+  height: 300px;
+}
+
+.polaroid:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+}
+
+.image {
+  width: 100px;
+  height: auto;
+}
+
+.pizza {
+  height: 70%;
+  width: auto;
+  margin: 20px 20px 20px 20px;
+  background-image: url("../img/bw/pizza.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s;
+  transition: transform 0.5s;
+}
+
+.pizza:hover {
+  background-image: url("../img/color/pizza.jpg");
+  transform: scale(1.1);
+}
+
+.fdny {
+  height: 70%;
+  width: auto;
+  margin: 20px 20px 20px 20px;
+  background-image: url("../img/bw/fdny.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s;
+  transition: transform 0.5s;
+}
+
+.fdny:hover {
+  background-image: url("../img/color/fdny.jpg");
+  transform: scale(1.1);
+}
+
+.skating {
+  height: 70%;
+  width: auto;
+  margin: 20px 20px 20px 20px;
+  background-image: url("../img/bw/skating.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s;
+  transition: transform 0.5s;
+}
+
+.skating:hover {
+  background-image: url("../img/color/skating.jpg");
+  transform: scale(1.1);
+}
+
+.tickets {
+  height: 70%;
+  width: auto;
+  margin: 20px 20px 20px 20px;
+  background-image: url("../img/bw/tickets.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s;
+  transition: transform 0.5s;
+}
+
+.tickets:hover {
+  background-image: url("../img/color/tickets.jpg");
+  transform: scale(1.1);
+}
+
+.traffic {
+  height: 70%;
+  width: auto;
+  margin: 20px 20px 20px 20px;
+  background-image: url("../img/bw/traffic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s;
+  transition: transform 0.5s;
+}
+
+.traffic:hover {
+  background-image: url("../img/color/traffic.jpg");
+  transform: scale(1.1);
+}
+
+.chinese-food {
+  height: 70%;
+  width: auto;
+  margin: 20px 20px 20px 20px;
+  background-image: url("../img/bw/chinese.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s;
+  transition: transform 0.5s;
+}
+
+.chinese-food:hover {
+  background-image: url("../img/color/chinese-food.jpg");
+  transform: scale(1.1);
+}
+
+.polaroid p {
+  font-family: "Moon Dance", cursive;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: large;
+  text-align: center;
+  color: darkslategray;
 }
