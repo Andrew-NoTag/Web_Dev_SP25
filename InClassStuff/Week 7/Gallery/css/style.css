@@ -46,7 +46,7 @@ body {
 .pizza {
   height: 70%;
   width: auto;
-  margin: 20px 20px 20px 20px;
+  margin: 10% 10% 0% 10%;
   background-image: url("../img/bw/pizza.jpg");
   background-size: cover;
   background-position: center;
@@ -63,7 +63,7 @@ body {
 .fdny {
   height: 70%;
   width: auto;
-  margin: 20px 20px 20px 20px;
+  margin: 10% 10% 0% 10%;
   background-image: url("../img/bw/fdny.jpg");
   background-size: cover;
   background-position: center;
@@ -80,7 +80,7 @@ body {
 .skating {
   height: 70%;
   width: auto;
-  margin: 20px 20px 20px 20px;
+  margin: 10% 10% 0% 10%;
   background-image: url("../img/bw/skating.jpg");
   background-size: cover;
   background-position: center;
@@ -97,7 +97,7 @@ body {
 .tickets {
   height: 70%;
   width: auto;
-  margin: 20px 20px 20px 20px;
+  margin: 10% 10% 0% 10%;
   background-image: url("../img/bw/tickets.jpg");
   background-size: cover;
   background-position: center;
@@ -114,7 +114,7 @@ body {
 .traffic {
   height: 70%;
   width: auto;
-  margin: 20px 20px 20px 20px;
+  margin: 10% 10% 0% 10%;
   background-image: url("../img/bw/traffic.jpg");
   background-size: cover;
   background-position: center;
@@ -131,7 +131,7 @@ body {
 .chinese-food {
   height: 70%;
   width: auto;
-  margin: 20px 20px 20px 20px;
+  margin: 10% 10% 0% 10%;
   background-image: url("../img/bw/chinese.jpg");
   background-size: cover;
   background-position: center;
