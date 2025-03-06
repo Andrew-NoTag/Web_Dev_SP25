@@ -1,6 +1,6 @@
 ---
 layout: default
-title: KoalaTravel Log
+title: KoalaKitchen Log
 ---
 
 # KoalaTravel
