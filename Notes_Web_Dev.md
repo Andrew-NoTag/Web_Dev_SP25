@@ -232,8 +232,11 @@ ul {
 1. Encode Me!
 2. `<div>`
 3. Gallery styling
+4. Midterm Proposal
+5. Image Styling
 
 ### Homework
+
 - [x] Midterm project proposal
 
 ### `<div>`
@@ -282,5 +285,44 @@ The Grid Layout Module offers a grid-based layout system, with rows and columns.
 .grid-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
+}
+```
+
+### Image Styling
+
+To avoid overflowing, we can set `max-width` to `100%`
+The height will change as the size of the window changes
+
+```css
+img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+Using `object-fit` allows the image to fill up the box, there are multiple attributes of it
+
+```css
+/* maintain the ratio of the image, but crop some parts */
+.cover {
+  object-fit: cover;
+}
+
+/* scale the image so that it fits the box, ratio might be changed */
+.contain {
+  object-fit: contain;
+}
+```
+
+To create rounded images, use `border-radius` property
+To make the opacity of image, use `opacity` property
+
+```css
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  opacity: 0.5; /* value from 0.0 to 1.0*/
 }
 ```
