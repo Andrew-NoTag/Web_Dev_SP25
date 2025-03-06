@@ -5,7 +5,7 @@ title: Midterm Project Proposal
 
 # KoalaKitchen: Lazy-Friendly Meal Planner
 
-<img src="KoalaKitchen.png" style="width:50%"></img>
+<img src="KoalaKitchen.png" style="width:50%">
 
 ## Overview
 
