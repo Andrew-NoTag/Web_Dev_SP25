@@ -234,7 +234,7 @@ ul {
 3. Gallery styling
 
 ### Homework
-- [ ] Midterm project proposal
+- [x] Midterm project proposal
 
 ### `<div>`
 
