@@ -238,6 +238,7 @@ ul {
 ### Homework
 
 - [x] Midterm project proposal
+- [x] MDN Web Docs Challenge: Fundamental CSS comprehension
 
 ### `<div>`
 
