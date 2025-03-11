@@ -374,4 +374,73 @@ CSS transitions allows you to change property values smoothly, over a given dura
 
 ### In Class
 
+1. CSS Media Types
+2. Flexbox
+3. Responsive Website
+
 ### Homework
+
+### CSS Media Types
+
+Different style rules for different media type
+We can link to different stylesheets for different media or different window widths:
+
+```css
+<link rel="stylesheet" media="print" href="print.css" />
+<link rel="stylesheet" media="screen" href="screen.css" />
+<link
+  rel="stylesheet"
+  media="screen and (min-width: 480px)"
+  href="example1.css"
+/>
+<link
+  rel="stylesheet"
+  media="screen and (min-width: 701px) and (max-width: 900px)"
+  href="example2.css"
+/>
+```
+
+### Flexbox
+
+To use CSS Flexbox, we need to define a flex container
+
+```html
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+```
+
+```css
+.flex-container {
+  display: flex;
+}
+```
+
+The properties we use for the flex container are:
+
+- flex-direction
+- flex-wrap
+- flex-flow
+- justify-content
+- align-items
+- align-content
+
+#### CSS Responsive Flexbox
+
+Use Flexbox to create different layout for different screen sizes and media types. For example, we can create a two-column layout for most of the screen and one-column layout for smaller screen sizes:
+
+```css
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+```
