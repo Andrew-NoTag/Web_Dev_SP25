@@ -369,3 +369,9 @@ CSS transitions allows you to change property values smoothly, over a given dura
 | `transition-duration`        | Specifies how many seconds or milliseconds a transition effect takes to complete       |
 | `transition-property`        | Specifies the name of the CSS property the transition effect is for                    |
 | `transition-timing-function` | Specifies the speed curve of the transition effect                                     |
+
+## Week 8
+
+### In Class
+
+### Homework
