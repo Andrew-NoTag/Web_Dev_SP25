@@ -378,8 +378,10 @@ CSS transitions allows you to change property values smoothly, over a given dura
 2. Flexbox
 3. Responsive Website
 4. [Flexbox Froggy](https://flexboxfroggy.com/)
+5. Javascript
 
 ### Homework
+- [x] No homework! Work on our midterm project!
 
 ### CSS Media Types
 
