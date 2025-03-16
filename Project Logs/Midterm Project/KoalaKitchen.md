@@ -53,3 +53,42 @@ npm install react-scripts
 
 Update compile instruction to `README.md`
 
+I used [this link](https://www.w3schools.com/react/react_getstarted.asp) to figure out my project structure and starter code.
+I used [this link](https://www.w3schools.com/react/react_render.asp) as a reference to learn how to render HTML. This is what I did in `index.js`:
+
+```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+// import "./index.css";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+
+Nothing show up... But when I inspect elements, I can see those elements. I doubt that the google font hasn't properly loaded.
+
+Okay it is not the font's problem because when I changed the google font to `Arial, sans-serif` still doesn't work
+![bug1](bug1.png)
+
+It turns out that I use `100%` for width and height, but it doesn't have a parent container, so the dependency doesn't work. I change it to relative to window size:
+
+```js
+<div
+  style={{
+    width: "100vw",
+    height: "100vh",
+    position: "relative",
+    overflow: "hidden",
+  }}
+>
+{/*other divs*/}
+</div>
+```
+
+Navigation bar is done.
+
