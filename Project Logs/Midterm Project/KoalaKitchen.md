@@ -8,7 +8,7 @@ title: KoalaKitchen Log
 ## Design
 
 Ask my friend Lim to make a logo. (no use yet)
-<img src="koalakitchen.png" alt="logo" style="width:30%; height:auto;">
+<img src="KoalaKitchen.png" alt="logo" style="width:30%; height:auto;">
 
 Find a good [template](https://www.figma.com/community/file/1077384985779045508) on Figma Community.
 Modify base on the template. Here is a [link](https://www.figma.com/design/rRASUlkOFE9ZfSy6c7Wwjr/Koala-Kitchen?node-id=1-2&t=Nh3uRBLWCjXMyMSR-1) to my figma project.
