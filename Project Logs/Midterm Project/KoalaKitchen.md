@@ -5,9 +5,7 @@ title: KoalaKitchen Log
 
 # KoalaKitchen
 
-## March 15, 2025
-
-### Design
+## Design
 
 Ask my friend Lim to make a logo.
 <img src="koalakitchen.png" alt="logo" style="width:30%; height:auto;">
@@ -15,7 +13,7 @@ Ask my friend Lim to make a logo.
 Find a good [template](https://www.figma.com/community/file/1077384985779045508) on Figma Community.
 Modify base on the template. Here is a [link](https://www.figma.com/design/rRASUlkOFE9ZfSy6c7Wwjr/Koala-Kitchen?node-id=1-2&t=Nh3uRBLWCjXMyMSR-1) to my figma project.
 
-### Coding
+## Coding
 
 Since I have already installed Node.js, I created a new React app. I used [this link](https://medium.com/@adityasrivast/reactjs-understanding-package-json-e8cdf408a3df) as a reference to update my `package.json` file
 
@@ -86,9 +84,14 @@ It turns out that I use `100%` for width and height, but it doesn't have a paren
     overflow: "hidden",
   }}
 >
-{/*other divs*/}
+  {/*other divs*/}
 </div>
 ```
 
+Naming css file as `NavBar.css` doesn't work, it has to be `NavBar.module.css`. Don't know why :(
+
 Navigation bar is done.
+![NavBar](NavBar.png)
+
+
 
