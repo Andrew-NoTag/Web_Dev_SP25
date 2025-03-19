@@ -145,4 +145,53 @@ In footer, three columns were used. Like the homepage, I used flex box to locate
 ![Footer](footer.png)
 
 ### Menu Page
-I wanna add a separate menu page. 
+
+I wanna add a separate menu page.
+
+Firstly, since menu page is a separate page, I have to link the page to buttons. I follow [this link](https://www.w3schools.com/react/react_router.asp) about React router and update my `app.js`:
+
+```js
+import React from "react";
+import NavBar from "./components/NavBar.js";
+import Homepage from "./components/Homepage.js";
+import Footer from "./components/Footer.js";
+import MenuPage from "./components/MenuPage.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div>
+        {/* NavBar at top of the page */}
+        <NavBar />
+
+        {/* Routes to different contents */}
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/menu" element={<MenuPage />} />
+        </Routes>
+
+        {/* Footer at bottom of the page */}
+        <Footer />
+      </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+```
+
+Basically I define routes to different pages.
+
+In `Homepage.js` and `NavBar.js`, link some buttons to the menu page:
+
+```js
+<div className={styles.buttonContainer}>
+  <Link to="/menu">
+    <div className={styles.menuButton}>View Menu</div>
+  </Link>
+  <div className={styles.hoursButton}>Hours</div>
+</div>
+```
+
+
