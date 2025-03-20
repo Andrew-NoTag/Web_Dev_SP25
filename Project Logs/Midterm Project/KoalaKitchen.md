@@ -194,4 +194,11 @@ In `Homepage.js` and `NavBar.js`, link some buttons to the menu page:
 </div>
 ```
 
+Creating the menu page now. It is a three columns designs (for now), with every column display a specific type of dishes.
+I used some css code from footer.
 
+### Cart
+
+I want to create a floating window representing the cart. When the user click on the image, the corresponding dish will be added to the card. It also has a "confirm" feature, where will output a PDF file and send it to me via email. (I want to add a server site later but for now email is replacement)
+
+Use [this link](https://stackoverflow.com/questions/76966480/how-to-create-a-floating-widget-that-can-float-outside-of-the-website-environmen) as a reference to create a floating window.
