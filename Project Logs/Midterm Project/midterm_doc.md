@@ -43,6 +43,13 @@ export default App;
 - redesign some elements (navigation bar etc.)
 - ensure every button works
 - animation (i.e. menu card flip)
+- db (maybe?)
 - update contents (i.e. dishes name and descriptions)
 - deploy on Github Pages
 
+
+
+
+
+- nav bar order
+- shopping cart clearer
