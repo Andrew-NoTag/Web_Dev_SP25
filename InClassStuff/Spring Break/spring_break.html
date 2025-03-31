@@ -6,73 +6,96 @@
   </head>
   <body>
     <div class="title">
-      <h1>Spring Break</h1>
+      <h1>Spring Break Homework</h1>
       <h4>By Andrew Zhang</h4>
       <h6 class="wispering">Who don't really want to do homework</h6>
     </div>
-    <div class="flip-box">
+    <div class="container">
       <h1>click to flip the card</h1>
-      
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
+      <h1 id="status">Try to make three in a row!</h1>
+    </div>
+    <!-- boxes -->
+    <div class="flip-box">
+      <div class="flip-box-inner" id="1">
+        <div class="box_back"><h2>X</h2></div>
+        <div class="box_front"></div>
       </div>
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
+      <div class="flip-box-inner" id="2">
+        <div class="box_back"><h2>X</h2></div>
+        <div class="box_front"></div>
       </div>
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
+      <div class="flip-box-inner" id="3">
+        <div class="box_back"><h2>X</h2></div>
+        <div class="box_front"></div>
       </div>
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
+      <div class="flip-box-inner" id="4">
+        <div class="box_back"><h2>X</h2></div>
+        <div class="box_front"></div>
       </div>
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
+      <div class="flip-box-inner" id="5">
+        <div class="box_back"><h2>X</h2></div>
+        <div class="box_front"></div>
       </div>
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
+      <div class="flip-box-inner" id="6">
+        <div class="box_back"><h2>X</h2></div>
+        <div class="box_front"></div>
       </div>
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
+      <div class="flip-box-inner" id="7">
+        <div class="box_back"><h2>X</h2></div>
+        <div class="box_front"></div>
       </div>
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
+      <div class="flip-box-inner" id="8">
+        <div class="box_back"><h2>X</h2></div>
+        <div class="box_front"></div>
       </div>
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
-      </div>
-      <div class="flip-box-inner">
-        <div class="box_back"></div>
-        <div class="box_front">
-          <h2>X</h2>
-        </div>
+      <div class="flip-box-inner" id="9">
+        <div class="box_back"><h2>X</h2></div>
+        <div class="box_front"></div>
       </div>
     </div>
+
+    <!-- flip on click -->
+    <!-- reference: https://stackoverflow.com/questions/73436445/flip-box-on-button-click-->
+    <script>
+      const winningStatus = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [1, 4, 7],
+        [2, 5, 8],
+        [3, 6, 9],
+        [1, 5, 9],
+        [3, 5, 7],
+      ];
+      const flippedBoxes = new Set();
+
+      document.querySelectorAll(".flip-box-inner").forEach((box) => {
+        box.addEventListener("click", (ev) => {
+          box.classList.toggle("is-flipped");
+          const id = parseInt(box.id);
+
+          // Check if the clicked box is flipped
+          // If yes, add to set. If no, remove from set
+          if (box.classList.contains("is-flipped")) {
+            flippedBoxes.add(id);
+          } else {
+            flippedBoxes.delete(id);
+          }
+
+          // Check if there are three in a row
+          for (const status of winningStatus) {
+            // all id in that status is flipped
+            if (status.every((id) => flippedBoxes.has(id))) {
+              document.getElementById("status").textContent =
+                "Congratulations! You make three in a row!";
+              return;
+            }
+          }
+          // No three in a row, display normal message
+          document.getElementById("status").textContent =
+            "Try to make three in a row!";
+        });
+      });
+    </script>
   </body>
 </html>
