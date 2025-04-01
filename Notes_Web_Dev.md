@@ -381,6 +381,7 @@ CSS transitions allows you to change property values smoothly, over a given dura
 5. Javascript
 
 ### Homework
+
 - [x] No homework! Work on our midterm project!
 
 ### CSS Media Types
@@ -447,3 +448,55 @@ Use Flexbox to create different layout for different screen sizes and media type
   }
 }
 ```
+
+## Week 10
+
+### In Class
+
+- JS
+
+### Homework
+
+### Javascript
+
+#### Output
+
+`.innerHTML` – change the text between the opening and closing tags of an HTML element of our choosing.
+
+> Use `innerHTML` when you want to change an HTML element.
+> Use `innerText` when you only want to change the plain text.
+
+```js
+document.getElementById("output").innerHTML =
+  "I just changed the content of this div using JavaScript";
+```
+
+`alert();` – displays a pop up window with the data we pass in to the ()
+
+```js
+alert(“Hello World!”);
+```
+
+`console.log();` – logs data to the javascript console (we can access this with Google Developer Tools or Firebug)
+
+```js
+console.log(“this is my first console log!”);
+```
+
+**Function** - statements to be executed together
+
+```js
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+```
+
+#### Variables
+
+- `var` - function-scoped, can be redeclared, updated
+- `let` - block-scoped, can be updated, but not redeclared
+- `const` - block-scoped, cannot be updated or redeclared, constant value
+
+
+
