@@ -18,9 +18,15 @@ document
     }
   });
 
-// Write a statement that adds 5 + 6
-document.getElementById("alertButton").addEventListener("click", function () {
-  alert(5 + 6);
+// Write a function that adds 5 + 6
+function sumValues(a, b) {
+  let c = a + b;
+  alert(c);
+}
+
+// Console log 5 + 6
+document.getElementById("consoleResult").addEventListener("click", function () {
+  console.log(5 + 6);
 });
 
 // hobby
@@ -32,10 +38,10 @@ document.getElementById("hobby").innerText =
 // math
 let num1 = 11;
 let num2 = 19;
-document.getElementById("math").innerText = 
-    num1 + " over " + num2 + " is " + (num1 / num2).toPrecision(8) + ".";
+document.getElementById("math").innerText =
+  num1 + " over " + num2 + " is " + (num1 / num2).toPrecision(8) + ".";
 
 // boolean
 let string1 = "11";
 document.getElementById("boolean").innerText =
-    num1 + "(num) equals " + string1 + "(string) is " + (num1 == string1) + "."; // true, amazing
+  num1 + "(num) equals " + string1 + "(string) is " + (num1 == string1) + "."; // true, amazing
