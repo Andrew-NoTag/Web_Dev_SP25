@@ -457,6 +457,8 @@ Use Flexbox to create different layout for different screen sizes and media type
 
 ### Homework
 
+- [x] JS fundamentals
+
 ### Javascript
 
 #### Output
@@ -498,5 +500,11 @@ function myFunction() {
 - `let` - block-scoped, can be updated, but not redeclared
 - `const` - block-scoped, cannot be updated or redeclared, constant value
 
+## Week 11
 
+### In Class
+- JS cont.
 
+### Homework
+- [x] MDN web docs Array Challenge
+- [x] Grocery List
