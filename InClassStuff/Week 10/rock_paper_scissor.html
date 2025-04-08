@@ -70,6 +70,11 @@
       const resultDisplay = document.getElementById("result");
       const resetButton = document.getElementById("reset");
 
+      // Track scores
+      let wins = 0;
+      let looses = 0;
+      let ties = 0;
+
       // Add event listeners to choice buttons
       document
         .getElementById("rock")
@@ -95,26 +100,33 @@
 
         if (playerChoice === computerChoice) {
           result = "It's a tie!";
+          ties++;
         } else if (
           (playerChoice === "rock" && computerChoice === "scissors") ||
           (playerChoice === "paper" && computerChoice === "rock") ||
           (playerChoice === "scissors" && computerChoice === "paper")
         ) {
           result = "You win!";
+          wins++;
         } else {
           result = "Computer wins!";
+          looses++;
         }
 
         // Display results
         resultDisplay.innerHTML = `
                 You chose ${playerChoice}.<br>
                 Computer chose ${computerChoice}.<br>
-                ${result}
+                ${result}<br><br>
+                Wins: ${wins} | Losses: ${looses} | Ties: ${ties}
             `;
       }
 
       // Function to reset the game
       function resetGame() {
+        wins = 0;
+        looses = 0;
+        ties = 0;
         resultDisplay.textContent = "Choose Rock, Paper, or Scissors!";
       }
     </script>
