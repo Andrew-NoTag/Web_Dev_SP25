@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A grocery list and a bunch of math in JS</title>
+  </head>
+  <body>
+    <h1>Grocery List</h1>
+    <p id="grocery-list"></p>
+    <h1>Random Math</h1>
+    <p id="random-math"></p>
+
+    <!-- script -->
+    <script>
+      let groceryList = [];
+
+      // I want to buy these things
+      groceryList.push("sourdough", "oat milt", "butter", "eggs");
+
+      // Oh, forgot to add fruits, also I just found out that I don't need eggs
+      let index = groceryList.indexOf("eggs");
+      groceryList.splice(index, 1, "cherry");
+
+      // I want to delete some items for no reason
+      groceryList.pop();
+      groceryList.shift();
+
+      // I want to make the list plural
+      function plural(str) {
+        return str + "s";
+      }
+      groceryList.map(plural);
+
+      // I wan to see what items I have has a character 'a'
+      function hasA(str) {
+        return str.includes("a") || str.includes("A");
+      }
+      const hasAList = groceryList.filter(hasA);
+      console.log(hasAList);
+
+      // Finally, I want to display the list on the page
+      document.getElementById("grocery-list").innerText =
+        "Final List: " + groceryList.join(", ");
+
+      // Random Math
+      var num1 = 11;
+      var num2 = 20;
+      var num3 = 9.28;
+
+      function randomNum(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      document.getElementById("random-math").innerText = `
+        Initialization: num1 = ${num1}, num2 = ${num2}, num3 = ${num3} \n
+        Addition: num1 + num2 = ${num1 + num2} \n
+        Subtraction: num2 - num1 = ${num2 - num1} \n
+        Multiplication: num1 * num2 = ${num1 * num2} \n
+        Division: num2 / num1 = ${(num2 / num1).toFixed(3)} \n
+        Modulus: num2 % num1 = ${num2 % num1} \n
+        Floor: num3(round down) = ${Math.floor(num3)} \n
+        Ceiling: num3(round up) = ${Math.ceil(num3)} \n
+
+        Now we are going to do some modification:\n
+        Add num2 to num1: num1 = ${num1 += num2} \n
+        Add num2 by 1 using ++: num2 = ${++num2} \n
+
+        Now we are going to generate some random numbers:\n
+        A random number between 9 and 28 (inclusive): ${randomNum(9, 28)} \n
+      `;
+    </script>
+  </body>
+</html>
