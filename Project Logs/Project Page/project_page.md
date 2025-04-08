@@ -91,3 +91,6 @@ Finally, add appropriate CSS to `.nav_a.active`.
 I used [this tutorial](https://formcarry.com/blog/how-to-create-a-simple-html-contact-form/) as a reference to build the contact form.
 
 Try to send a test email, failed. The browser displays `405 Not Allowed`
+Turns out that GitHub Pages do not support any server-side code, so I can't use PHP.
+Therefore, I am going to use Formcarry.
+
