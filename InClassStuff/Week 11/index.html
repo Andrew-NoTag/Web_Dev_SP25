@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6104c18047.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("../../nav_bar.html", function () {
+          $(".nav_a").each(function () {
+            var link_href = this.href.replace(/\/$/, "");
+            var window_href = window.location.href.replace(/\/$/, "");
+            if (link_href === window_href) {
+              $(this).addClass("active");
+            }
+          });
+        });
+      });
+    </script>
+    <title>Intro to Web Dev - Week 11</title>
+  </head>
+  <body>
+    <a href="../../index.html" class="back-button"
+      ><i class="fa-solid fa-house" style="color: rgb(251, 250, 247)"></i
+    ></a>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <!--end of Navigation bar-->
+
+    <!--HW starts-->
+    <a href="js_mcq.html" target="_blank">Javascript MCQ Screenshots</a>
+    <br />
+    <!--HW ends-->
+  </body>
+</html>
