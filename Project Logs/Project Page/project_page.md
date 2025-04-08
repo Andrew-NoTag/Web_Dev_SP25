@@ -85,3 +85,7 @@ I want to dynamically detect which page I am on, so I use _jQuery_ library and w
 At first, the code can not correctly detect the current active page. Using console logs, I found out that `this.href` and `window.location.href` return address is one back slash different at the end. So I modified the code to compare the two address after remove all the back slashes.
 
 Finally, add appropriate CSS to `.nav_a.active`.
+
+## Contact Form
+
+I used [this tutorial](https://formcarry.com/blog/how-to-create-a-simple-html-contact-form/) as a reference to build the contact form.

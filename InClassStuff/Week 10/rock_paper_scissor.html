@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+      }
+      .choices {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 25px 0;
+      }
+      .choice {
+        padding: 12px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .choice:hover {
+        background-color: #45a049;
+      }
+      .result {
+        margin: 20px 0;
+        font-size: 18px;
+        min-height: 60px;
+      }
+      #reset {
+        padding: 10px 20px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      #reset:hover {
+        background-color: #d32f2f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+
+    <div class="result" id="result">Choose Rock, Paper, or Scissors!</div>
+
+    <div class="choices">
+      <button class="choice" id="rock">Rock</button>
+      <button class="choice" id="paper">Paper</button>
+      <button class="choice" id="scissors">Scissors</button>
+    </div>
+
+    <button id="reset">Reset Game</button>
+
+    <script>
+      // DOM elements
+      const resultDisplay = document.getElementById("result");
+      const resetButton = document.getElementById("reset");
+
+      // Add event listeners to choice buttons
+      document
+        .getElementById("rock")
+        .addEventListener("click", () => playGame("rock"));
+      document
+        .getElementById("paper")
+        .addEventListener("click", () => playGame("paper"));
+      document
+        .getElementById("scissors")
+        .addEventListener("click", () => playGame("scissors"));
+
+      // Add event listener to reset button
+      resetButton.addEventListener("click", resetGame);
+
+      // Function to play the game
+      function playGame(playerChoice) {
+        // Generate computer choice
+        const choices = ["rock", "paper", "scissors"];
+        const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+        // Determine winner
+        let result;
+
+        if (playerChoice === computerChoice) {
+          result = "It's a tie!";
+        } else if (
+          (playerChoice === "rock" && computerChoice === "scissors") ||
+          (playerChoice === "paper" && computerChoice === "rock") ||
+          (playerChoice === "scissors" && computerChoice === "paper")
+        ) {
+          result = "You win!";
+        } else {
+          result = "Computer wins!";
+        }
+
+        // Display results
+        resultDisplay.innerHTML = `
+                You chose ${playerChoice}.<br>
+                Computer chose ${computerChoice}.<br>
+                ${result}
+            `;
+      }
+
+      // Function to reset the game
+      function resetGame() {
+        resultDisplay.textContent = "Choose Rock, Paper, or Scissors!";
+      }
+    </script>
+  </body>
+</html>
