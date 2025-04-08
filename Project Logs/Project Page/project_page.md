@@ -89,3 +89,5 @@ Finally, add appropriate CSS to `.nav_a.active`.
 ## Contact Form
 
 I used [this tutorial](https://formcarry.com/blog/how-to-create-a-simple-html-contact-form/) as a reference to build the contact form.
+
+Try to send a test email, failed. The browser displays `405 Not Allowed`
