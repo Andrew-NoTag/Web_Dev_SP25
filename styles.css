@@ -138,9 +138,9 @@ a:hover {
   margin: 0 auto;
   width: 20%;
   padding: 10px;
-  background-color: lightgray;
+  background-color: rgb(230, 230, 230);
   border: none;
-  border: 4px solid lightgray;
+  border: 4px solid rgb(230, 230, 230);
   outline: none;
   border-radius: 8px;
   color: darkslategray;
