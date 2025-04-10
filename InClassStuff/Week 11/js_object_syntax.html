@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Objects Exercise</title>
+    <style>
+      .result {
+        background-color: #e6f7ff;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Objects Exercise</h1>
+
+    <div class="result">
+      <div class="prompt">1. Tony's third pet:</div>
+      <div id="answer1">...</div>
+    </div>
+
+    <div class="result">
+      <div class="prompt">2. Billy's last name:</div>
+      <div id="answer2">...</div>
+    </div>
+
+    <div class="result">
+      <div class="prompt">3. The size of the others array:</div>
+      <div id="answer3">...</div>
+    </div>
+
+    <div class="result">
+      <div class="prompt">
+        4. The first name of everyone in the others array:
+      </div>
+      <div id="answer4">...</div>
+    </div>
+
+    <div class="result">
+      <div class="prompt">5. Tara's first pet:</div>
+      <div id="answer5">...</div>
+    </div>
+
+    <script>
+      // Object data
+      var myClass = {
+        me: {
+          firstName: "Tony",
+          lastName: "Pony",
+          pets: ["Dog", "Cat", "Iguana"],
+        },
+        others: [
+          {
+            firstName: "Sally",
+            lastName: "Omally",
+            pets: ["ButterFly", "Bird"],
+          },
+          {
+            firstName: "Billy",
+            lastName: "Goat",
+            pets: ["Snake", "Fish"],
+          },
+          {
+            firstName: "Tara",
+            lastName: "Ohara",
+            pets: ["Gecko", "Lizard"],
+          },
+        ],
+      };
+
+      // YOUR CODE GOES BELOW
+      // Replace each "..." with the correct code
+
+      // 1. Tony's third pet
+      document.getElementById("answer1").textContent = myClass.me.pets[2];
+
+      // 2. Billy's last name
+      document.getElementById("answer2").textContent =
+        myClass.others[1].lastName;
+
+      // 3. The size of the others array
+      document.getElementById("answer3").textContent = myClass.others.length;
+
+      // 4. The first name of everyone in the others array (using a loop)
+      // Hint: You'll need to create a variable to hold all the names, then loop through the array
+      let allNames = "";
+      // ... your for loop here
+      for (const person of myClass.others) {
+        allNames += person.firstName + ", ";
+      }
+
+      document.getElementById("answer4").textContent = allNames;
+
+      // 5. Tara's first pet
+      document.getElementById("answer5").textContent =
+        myClass.others[2].pets[0];
+    </script>
+  </body>
+</html>

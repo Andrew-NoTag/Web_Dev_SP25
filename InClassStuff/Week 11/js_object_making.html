@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        font-size: 2em;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="preview"></section>
+  </body>
+  <script>
+    // Object data
+
+    /* using classes
+    class Album {
+      constructor(name, released) {
+        this.name = name;
+        this.released = released;
+      }
+    }
+
+    class Band {
+      constructor(name, nationality, genre, members, formed, split, albums) {
+        this.name = name;
+        this.nationality = nationality;
+        this.genre = genre;
+        this.members = members;
+        this.formed = formed;
+        this.split = split;
+        this.albums = albums;
+      }
+    }
+
+
+    const band = new Band("Radwimps", "Japanese", "rock", 4, 2001, false, [
+      new Album("Your Name", 2016),
+      new Album("Suzume", 2022),
+    ]);
+    */
+
+    var band = {
+      name: "Radwimps",
+      nationality: "Japanese",
+      genre: "rock",
+      members: 4,
+      formed: 2001,
+      split: false,
+      albums: [
+        {
+          name: "Your Name",
+          released: 2016,
+        },
+        {
+          name: "Suzume",
+          released: 2022,
+        },
+      ],
+    };
+
+    // Don't edit the code below here!
+    let yearsActive = band.split
+      ? "from " + band.formed + " to " + new Date().getFullYear()
+      : "since " + band.formed;
+
+    let bandInfo =
+      band.name +
+      " is a " +
+      band.nationality +
+      " " +
+      band.genre +
+      " band. They were active " +
+      yearsActive +
+      ". Their first album, " +
+      band.albums[0].name +
+      ", was released in " +
+      band.albums[0].released +
+      ".";
+
+    const section = document.querySelector("section");
+    let para1 = document.createElement("p");
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+</html>

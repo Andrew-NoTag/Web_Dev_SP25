@@ -1,0 +1,108 @@
+<!-- mood-changer-template.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mood Changer</title>
+    <style>
+      body {
+        text-align: center;
+        padding: 2rem;
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+      }
+      #moodImg {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        margin-top: 1rem;
+      }
+      input,
+      button {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mood Changer 😎</h1>
+    <p>Options: angry, happy, okay, question, sad, sleepy</p>
+
+    <input
+      type="String"
+      id="moodInput"
+      placeholder="Enter a mood (e.g happy)"
+    />
+    <button id="setMoodBtn">Set Mood</button>
+
+    <h2 id="moodMessage">How are you feeling?</h2>
+    <img id="moodImg" src="placeholder.jpg" alt="Mood face" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const button = document.getElementById("setMoodBtn");
+        const input = document.getElementById("moodInput");
+
+        // enter key
+        input.addEventListener("keypress", function (event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            button.click();
+          }
+        });
+
+        // button
+        button.addEventListener("click", changeMood);
+      });
+
+      function changeMood() {
+        // Get input value
+        let input = document.getElementById("moodInput").value;
+
+        // Get DOM elements
+        const message = document.getElementById("moodMessage");
+        const img = document.getElementById("moodImg");
+
+        // TODO: Replace with real switch logic!
+        switch (input.toLowerCase()) {
+          case "happy":
+            message.textContent = "Happy! 😊";
+            img.src = "mood_img/happy.png";
+            document.body.style.backgroundColor = "lightgreen";
+            break;
+          case "sad":
+            message.textContent = "Sad! 😢";
+            img.src = "mood_img/sad.png";
+            document.body.style.backgroundColor = "lightblue";
+            break;
+          case "angry":
+            message.textContent = "Angry! 😡";
+            img.src = "mood_img/angry.png";
+            document.body.style.backgroundColor = "red";
+            break;
+          case "sleepy":
+            message.textContent = "Sleepy! 😴";
+            img.src = "mood_img/sleepy.png";
+            document.body.style.backgroundColor = "rgb(121,85,212)";
+            break;
+          case "question":
+            message.textContent = "Questioning! 🤔";
+            img.src = "mood_img/question.jpg";
+            document.body.style.backgroundColor = "yellow";
+            break;
+          case "okay":
+            message.textContent = "Okay! 😐";
+            img.src = "mood_img/okay.png";
+            document.body.style.backgroundColor = "orange";
+            break;
+          default:
+            1;
+            message.textContent = "Please enter a mood from the given options!";
+            img.src = "placeholder.jpg";
+            document.body.style.backgroundColor = "#f0f0f0";
+        }
+      }
+    </script>
+  </body>
+</html>

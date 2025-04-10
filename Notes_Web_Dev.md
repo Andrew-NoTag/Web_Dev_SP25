@@ -503,8 +503,27 @@ function myFunction() {
 ## Week 11
 
 ### In Class
+
 - JS cont.
 
 ### Homework
+
 - [x] MDN web docs Array Challenge
 - [x] Grocery List
+
+### JS Objects
+
+Initialization
+
+```js
+var myVar = {
+  key: value,
+  key: value,
+};
+```
+
+Access properties using dot notation
+
+```js
+console.log(myVar.key);
+```
