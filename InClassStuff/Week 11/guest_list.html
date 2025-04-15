@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guest List</title>
+  </head>
+  <body>
+    <h1>Guest List</h1>
+    <p class="admitted"></p>
+    <p class="refused"></p>
+
+    <script>
+      const people = [
+        "Chris",
+        "Anne",
+        "Colin",
+        "Terri",
+        "Phil",
+        "Lola",
+        "Sam",
+        "Kay",
+        "Bruce",
+      ];
+
+      const admitted = document.querySelector(".admitted");
+      const refused = document.querySelector(".refused");
+      admitted.textContent = "Admit: ";
+      refused.textContent = "Refuse: ";
+
+      for (const person of people) {
+        if (person === "Phil" || person === "Lola") {
+          refused.textContent += person + ", ";
+        } else {
+          admitted.textContent += person + ", ";
+        }
+      }
+
+      // bonus: remove the last comma and add a period
+      admitted.textContent = admitted.textContent.slice(0, -2) + ".";
+      refused.textContent = refused.textContent.slice(0, -2) + ".";
+    </script>
+  </body>
+</html>

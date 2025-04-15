@@ -510,6 +510,7 @@ function myFunction() {
 
 - [x] MDN web docs Array Challenge
 - [x] Grocery List
+- [x] MDN Loop
 
 ### JS Objects
 
@@ -526,4 +527,127 @@ Access properties using dot notation
 
 ```js
 console.log(myVar.key);
+```
+
+### JS Loop
+
+#### Basic Loops
+
+`for` loop
+
+```js
+for (let i = 0; i < 100; i++) {
+  console.log(i);
+}
+```
+
+The three arguments in the `for` loop are:
+
+1. **initializer**: initialize a counter variable
+2. **condition**: when does the loop break
+3. **final** expression: evaluate after each time the loop has gone through
+
+`while` loop
+
+```js
+let i = 0;
+while (i < 100) {
+  console.log(i);
+  i++;
+}
+```
+
+`while` loop ends when the condition is met. Notice that it check the condition before each iteration.
+
+`do...while` loop
+
+```js
+const cats = ["Pete", "Biggles", "Jasmine"];
+
+let myFavoriteCats = "My cats are called ";
+
+let i = 0;
+
+do {
+  if (i === cats.length - 1) {
+    myFavoriteCats += `and ${cats[i]}.`;
+  } else {
+    myFavoriteCats += `${cats[i]}, `;
+  }
+
+  i++;
+} while (i < cats.length);
+
+console.log(myFavoriteCats); // "My cats are called Pete, Biggles, and Jasmine."
+```
+
+It is basically the same as a `while` loop, except the iteration will run once first, then the condition is checked. So the loop will be run at least one time.
+
+#### Looping through collections
+
+In JS, we can loop through collections, such as `array`, `set`, or `map` data structure
+
+```js
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+for (const cat of cats) {
+  console.log(cat);
+}
+```
+
+`map()` can do something to each item in a collection and create a new collection containing the changed items
+noticed that the function is applied to each item each time, not the whole collection.
+
+```js
+function toUpper(string) {
+  return string.toUpperCase();
+}
+
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+const upperCats = cats.map(toUpper);
+
+console.log(upperCats);
+// [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
+```
+
+`filter()` can test each item in a collection, and create a new collection containing only items that match
+
+```js
+function lCat(cat) {
+  return cat.startsWith("L") || cat.startsWith("l");
+}
+
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+const filtered = cats.filter(lCat);
+
+console.log(filtered);
+// [ "Leopard", "Lion" ]
+```
+
+#### Useful statements
+
+To exit a loop, we will use a `break` statement
+
+```js
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break;
+  }
+  console.log(i);
+}
+// Output: 0 1 2 3 4
+```
+
+To skip the current iteration, we use `continue` statement
+
+```js
+for (let i = 0; i < 10; i++) {
+  if (i % 2 !== 0) {
+    continue;
+  }
+  console.log(i);
+}
+// Output: 0 2 4 6 8
 ```
