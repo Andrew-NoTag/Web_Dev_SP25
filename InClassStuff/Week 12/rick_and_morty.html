@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Rick and Morty Character</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #fefae0;
+        text-align: center;
+        padding: 2rem;
+      }
+      #card {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        max-width: 100%;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+      }
+      button {
+        background: #f9c74f;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <h1 id="title">Loading...</h1>
+      <img id="image" src="" alt="Character Image" style="display: none" />
+      <p id="description"></p>
+      <button onclick="loadRandomCharacter()">Next Character</button>
+    </div>
+
+    <script>
+      async function loadRandomCharacter() {
+        const res = await fetch("https://rickandmortyapi.com/api/character");
+        const characters = await res.json();
+
+        // grab random film
+        const randomCharacter =
+          characters.results[
+            Math.floor(Math.random() * characters.results.length)
+          ];
+        document.getElementById("title").innerText = randomCharacter.name;
+        if (randomCharacter.image) {
+          const img = document.getElementById("image");
+          img.src = randomCharacter.image;
+          img.style.display = "block";
+          img.style.margin = "0 auto";
+        } else {
+          document.getElementById("image").style.display = "none";
+        }
+      }
+      loadRandomCharacter();
+    </script>
+  </body>
+</html>

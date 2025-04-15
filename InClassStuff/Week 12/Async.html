@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Ghibli Film</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #fefae0;
+        text-align: center;
+        padding: 2rem;
+      }
+      #card {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        max-width: 100%;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+      }
+      button {
+        background: #f9c74f;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <h1 id="title">Loading...</h1>
+      <img id="image" src="" alt="Film poster" style="display: none" />
+      <p id="release_year"></p>
+      <p id="description"></p>
+      <button onclick="loadRandomFilm()">Next Film</button>
+      <button onclick="loadRandomFileBefore2000()">
+        Random File Made Before 2000
+      </button>
+    </div>
+
+    <script>
+      async function loadRandomFilm() {
+        const res = await fetch("https://ghibliapi.vercel.app/films");
+        const films = await res.json();
+
+        // grab random film
+        const randomFilm = films[Math.floor(Math.random() * films.length)];
+
+        document.getElementById("title").textContent = randomFilm.title;
+        document.getElementById("release_year").textContent =
+          "Release Year: " + randomFilm.release_date;
+        document.getElementById("description").textContent =
+          randomFilm.description;
+        if (randomFilm.image) {
+          const img = document.getElementById("image");
+          img.src = randomFilm.image;
+          img.style.display = "block";
+        } else {
+          document.getElementById("image").style.display = "none";
+        }
+      }
+
+      async function loadRandomFileBefore2000() {
+        const res = await fetch("https://ghibliapi.vercel.app/films");
+        const films = await res.json();
+
+        // grab random film
+        const randomFilm = films[Math.floor(Math.random() * films.length)];
+        const releaseYear = parseInt(randomFilm.release_date, 10);
+        if (releaseYear >= 2000) {
+          loadRandomFileBefore2000();
+          return;
+        }
+
+        document.getElementById("title").textContent = randomFilm.title;
+        document.getElementById("release_year").textContent =
+          "Release Year: " + randomFilm.release_date;
+        document.getElementById("description").textContent =
+          randomFilm.description;
+        if (randomFilm.image) {
+          const img = document.getElementById("image");
+          img.src = randomFilm.image;
+          img.style.display = "block";
+        } else {
+          document.getElementById("image").style.display = "none";
+        }
+      }
+
+      loadRandomFilm();
+    </script>
+  </body>
+</html>

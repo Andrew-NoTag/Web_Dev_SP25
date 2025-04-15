@@ -651,3 +651,45 @@ for (let i = 0; i < 10; i++) {
 }
 // Output: 0 2 4 6 8
 ```
+
+## Week 12
+
+### In Class
+
+- JSON
+-
+
+### Homework
+
+### JSON
+
+JSON (JavaScript Object Notation) is a lightweight text format for storing and sharing data.
+
+```json
+{
+  "name": "Jane Doe",
+  "age": 30,
+  "isStudent": false
+}
+```
+
+Parse JSON string -> JS object
+
+```js
+const jsonString = '{"name": "Jane"}';
+const obj = JSON.parse(jsonString);
+console.log(obj.name); // "Jane"
+```
+
+JS object -> JSON string
+
+```js
+const obj = { name: "Jane" };
+const jsonString = JSON.stringify(obj);
+```
+
+JSON can represent:
+
+- Objects
+- Arrays
+- Strings, numbers, booleans, and null
