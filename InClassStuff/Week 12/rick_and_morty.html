@@ -48,7 +48,7 @@
         const res = await fetch("https://rickandmortyapi.com/api/character");
         const characters = await res.json();
 
-        // grab random film
+        // grab random character
         const randomCharacter =
           characters.results[
             Math.floor(Math.random() * characters.results.length)
