@@ -657,9 +657,13 @@ for (let i = 0; i < 10; i++) {
 ### In Class
 
 - JSON
--
+- API
+- UX
 
 ### Homework
+
+- [x] API Exercise
+- [ ] Final Project Proposal
 
 ### JSON
 
@@ -693,3 +697,25 @@ JSON can represent:
 - Objects
 - Arrays
 - Strings, numbers, booleans, and null
+
+### UX
+
+#### UX Principles
+
+- **contrast**: using differences in color, shape, size, or font weight to draw attention or create _separation_
+- **typography**: How text is styled, including size, weight, spacing, and font choice.
+  - don't use more than 2-3 typeface
+  - Use proper size hierarchy (headings should feel like headings).
+  - Line length: keep it 70-75 characters
+- **visual hierarchy**: Guiding the user’s eye using size, color, and position.
+- **alignment & Grids**
+- **whitespace**
+- **color**: Using color purposefully, not randomly.
+  - consider culture context
+  - color theory
+  - color psychology
+  - create a color palette
+- **icon and images**
+  - use high-quality, consistent images.
+  - don’t mix photo styles (e.g., flat icons with 3D photos).
+  - SVGs are great for crispness.
