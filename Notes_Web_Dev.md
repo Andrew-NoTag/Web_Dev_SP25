@@ -663,7 +663,7 @@ for (let i = 0; i < 10; i++) {
 ### Homework
 
 - [x] API Exercise
-- [ ] Final Project Proposal
+- [x] Final Project Proposal
 
 ### JSON
 
@@ -719,3 +719,13 @@ JSON can represent:
   - use high-quality, consistent images.
   - don’t mix photo styles (e.g., flat icons with 3D photos).
   - SVGs are great for crispness.
+
+## Week 13
+
+### In Class
+
+- JS Events
+
+### Homework
+
+### JS Events

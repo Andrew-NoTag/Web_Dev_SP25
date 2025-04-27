@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Animations</title>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      style="border: 1px solid"
+      width="600"
+      height="300"
+    ></canvas>
+
+    <audio id="backgroundMusic" loop>
+      <source src="./imgs/elevator.wav" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+      const backgroundMusic = document.getElementById("backgroundMusic");
+
+      let raf;
+
+      const ball = {
+        x: 100,
+        y: 100,
+        vx: 3,
+        vy: 2,
+        radius: 25,
+        color: "blue",
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+          ctx.closePath();
+          ctx.fillStyle = this.color;
+          ctx.fill();
+        },
+      };
+
+      function getRandomColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ball.draw();
+        ball.x += ball.vx;
+        ball.y += ball.vy;
+
+        if (
+          ball.y + ball.vy > canvas.height - ball.radius ||
+          ball.y + ball.vy < ball.radius
+        ) {
+          ball.vy = -ball.vy;
+          ball.color = getRandomColor();
+        }
+        if (
+          ball.x + ball.vx > canvas.width - ball.radius ||
+          ball.x + ball.vx < ball.radius
+        ) {
+          ball.vx = -ball.vx;
+          ball.color = getRandomColor();
+        }
+
+        raf = window.requestAnimationFrame(draw);
+      }
+
+      raf = window.requestAnimationFrame(draw);
+      backgroundMusic.play().catch((e) => {
+        console.log("Audio playback failed:", e);
+      });
+    </script>
+  </body>
+</html>

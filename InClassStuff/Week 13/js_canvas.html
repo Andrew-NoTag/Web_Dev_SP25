@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Canvas experiment</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="150" height="150"></canvas>
+    <script type="application/javascript">
+      function draw() {
+        const canvas = document.getElementById("canvas");
+        if (canvas.getContext) {
+          const ctx = canvas.getContext("2d");
+
+          ctx.beginPath();
+          // Face (full circle)
+          ctx.arc(75, 75, 50, 0, Math.PI * 2, true);
+          // Mouth (half circle)
+          ctx.moveTo(110, 75);
+          ctx.arc(75, 75, 35, 0, Math.PI, false);
+          // Left eye
+          ctx.moveTo(65, 65);
+          ctx.arc(60, 65, 5, 0, Math.PI * 2, true);
+          // Right eye
+          ctx.moveTo(95, 65);
+          ctx.arc(90, 65, 5, 0, Math.PI * 2, true);
+          ctx.stroke();
+        }
+      }
+      draw();
+    </script>
+  </body>
+</html>
