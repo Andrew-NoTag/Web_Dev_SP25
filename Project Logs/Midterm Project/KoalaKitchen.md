@@ -202,3 +202,17 @@ I used some css code from footer.
 I want to create a floating window representing the cart. When the user click on the image, the corresponding dish will be added to the card. It also has a "confirm" feature, where will output a PDF file and send it to me via email. (I want to add a server site later but for now email is replacement)
 
 Use [this link](https://stackoverflow.com/questions/76966480/how-to-create-a-floating-widget-that-can-float-outside-of-the-website-environmen) as a reference to create a floating window.
+
+![alt text](image-5.png)
+User will be able to add dishes to the cart. The cart content is managed by local storage, so it will have a record of the dishes in the cart, even the user switch to other tabs. 
+
+The location of the cart is also managed by local storage, so when the user switch between tabs, the relative location of the cart will remain the same, bringing a better user experience.
+
+### Live time display
+![alt text](image-4.png)
+
+There is a live time display that detect the current time and compare to the opening hours.
+
+### Reservation
+![alt text](image-6.png)
+After the user finish ordering, they can jump to the reservation page and make a reservation. After all information is filled and confirmation, an email will be sent to my account so that I will know the customers name, email, dishes they ordered, and the grocery I need to buy.
